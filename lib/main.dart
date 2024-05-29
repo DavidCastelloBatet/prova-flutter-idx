@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(useMaterial3: true),
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Bentornats a Flutter de nou'),
+          title: const Text('Bentornats a Flutter de nou!'),
           centerTitle: true,
         ),
         body: Container(
