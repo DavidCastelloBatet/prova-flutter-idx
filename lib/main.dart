@@ -9,41 +9,39 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // Every custom widget must have a build() method
-  // It tells Flutter, which widgets make up your custom widget
-  // Again: You'll learn all about that throughout the course!
+
   @override
   Widget build(BuildContext context) {
-    // Below, a bunch of built-in widgets are used (provided by Flutter)
-    // They will be explained in the next sections
-    // In this course, you will, of course, not just use them a lot but
-    // also learn about many other widgets!
+
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter First App',
       theme: ThemeData(useMaterial3: true),
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Welcome to Flutter'),
+          title: const Text('Bentornats a Flutter'),
+          centerTitle: true,
         ),
         body: Container(
           width: double.infinity,
-          padding: const EdgeInsets.all(12),
+          padding: const EdgeInsets.all(6),
           child: const Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Text(
-                'Flutter - The Complete Guide',
+                'Flutter - La Guia Completa',
                 textAlign: TextAlign.center,
                 style: TextStyle(
-                  fontSize: 24,
+                  fontSize: 30,
                   fontWeight: FontWeight.bold,
+                  color: Colors.blue,
                 ),
               ),
               SizedBox(height: 16),
               Text(
-                'Learn Flutter step-by-step, from the ground up.',
-                textAlign: TextAlign.center,
+                'Apendre Flutter des de 0 i fer la primera App.',
+                textAlign: TextAlign.left,
               ),
             ],
           ),
